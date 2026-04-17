@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="client.css">
+        <link rel="icon" href="piou.svg">
+        <title>Twytter</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo" id="logo"><img src="piou.svg" alt="logo" height="100"><h1>Twytter</h1></div>
+
+            <div id="menu" class="menu">
+                <span id="loginStatus"></span>
+                <button id="loginBtn">Log In</button>
+                <button id="signupBtn">Sign Up</button>
+                <button id="openTwytBtn" class="hidden">Twyt</button>
+                <button id="logoutBtn" class="hidden">Log Out</button>
+            </div>
+        </div>
+
+        <div id="app"></div>
+        <div id="modal" class="modal hidden">
+            <div class="twyt" id="msg-box">
+                <textarea maxlength="560" id="msg" placeholder="Type your Twyt here."></textarea>
+                <div class="text-right">
+                    <button id="cancel-msg" title="Cancel">✖</button>
+                    <button id="send-msg" title="Send Twyt">➤</button>
+                    <span id="ctr">0</span><span>/560</span>
+                </div>
+            </div>
+        </div>
+            
+        <script src="client.js"></script>
+    </body>
+</html>

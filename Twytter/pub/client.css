@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+h1 { font-size: clamp(1.3rem, 4vw, 2rem);}
+h3 { font-size: clamp(1.3rem, 4vw, 2rem);}
+span { font-size: clamp(1.1rem, 3vw, 1.5rem);}
+
+p { 
+    font-size: clamp(1.1rem, 3vw, 1.5rem); 
+    margin: 0px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+}
+
+.navbar {
+    background: #1da1f2;
+    color: white;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 10px
+}
+
+.login-status {
+    display: flex;
+    justify-content: flex-end;
+    color: grey;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#goHomeBtn {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    background: #1da1f2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu button {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    background: #1da1f2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100px;
+}
+
+.menu button:hover {
+    background: #0d8ddb;
+}
+
+#app {
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.message {
+    background: white;
+    padding: 25px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.endScroll {
+    color: grey;
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.entete-msg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.date {
+    font-size: clamp(1.1rem, 3vw, 1rem);
+    color: grey;
+}
+
+.username {
+    font-weight: bold;
+    background: rgba(116, 167, 184, 0.192);
+    padding: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 8px;
+}
+
+.userid {
+    font-size: clamp(1.1rem, 3vw, 1rem);
+    color: rgb(116, 167, 184);
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.form input {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    height: 50px;
+    width: 350px;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.form button {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    background: #1da1f2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.twyt {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    margin: 10px;
+    background: #1da1f2;
+    padding: 20px;
+    border-radius: 16px;
+    min-width: 70%;
+    min-height: 50%;
+}
+
+.twyt textarea {
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    padding: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+.twyt button {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginStatus {
+    color: lightgray;
+}
+
+.text-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+#send-msg {
+    background: lightgrey;
+    color: #1da1f2;
+}
+
+#cancel-msg {
+    margin-bottom: auto;
+    background: #ff3232;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.like {
+    cursor: pointer;
+    font-weight: bold;
+    background: rgba(116, 167, 184, 0.192);
+    padding: 5px 13px;
+    border-radius: 8px;
+    float: right;
+    margin-top: -25px;
+    margin-right: 20px;
+}
+
+.notification {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    background: #000000c0; 
+    color: #fff;
+    padding: 12px 20px; 
+    border-radius: 8px;
+    opacity: 0.5; 
+    transition: opacity 0.5s;
+}
+
+.notifZone {
+    position: fixed; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: center;
+}
+
+#loginBtn:hover, #signupBtn:hover, #logoutBtn:hover, #openTwytBtn:hover {
+    background-color: initial;
+    color: rgb(0, 0, 0);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+    display: none;
+}
